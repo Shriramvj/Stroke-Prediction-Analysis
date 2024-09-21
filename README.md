@@ -19,21 +19,12 @@ The project includes:
 3. **How can we effectively preprocess and clean medical data?**
    - Detailed steps are taken to clean, scale, and encode the data for effective model training.
 
-## 🛠️ Tools and Libraries
-- **Python**: Main programming language used for data processing and machine learning.
-- **pandas**: For data manipulation and preprocessing.
-- **scikit-learn**: For machine learning model implementation and evaluation.
-- **Matplotlib/Seaborn**: For data visualization.
-- **TensorFlow/Keras**: For deep learning model building (if applicable).
+## 📁 Project Structure
 
-## 📝 Steps to Execute the Project
-
-### Step 1: **Data Collection and Loading**
-The project begins with loading the dataset that contains medical records of patients. This dataset includes features such as **age**, **hypertension**, **glucose levels**, **BMI**, and more. 
-
-- **Code**: The dataset is loaded using `pandas` through a CSV file.
-- **Objective**: Ensure that the data is properly read and accessible for further processing.
-
-```python
-import pandas as pd
-data = pd.read_csv('path_to_your_dataset.csv')
+```plaintext
+├── Stroke_Prediction_Analysis.ipynb                 # Main notebook with model building and evaluation
+├── Stroke_Prediction_Data_Cleaning_and_Analysis.ipynb # Data cleaning and exploratory data analysis
+├── data_processing.py                                # Script for loading and preprocessing the data
+├── model_training.py                                 # Script for training and evaluating machine learning models
+├── utils.py                                          # Utility functions for data splitting and scaling
+├── test_data_processing.py                           # Unit tests for data processing
